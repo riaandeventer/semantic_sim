@@ -1,10 +1,13 @@
-# Introduction to Natural Language Processing (NLP)
+# Semantic Similarity (NLP)
 
-This program takes 5 sentence and tokenise each sentence and perform entity recognition.
+This program measure similarities between different formats.
 
 ## Description
 
-The program uses spacy to categorise each sentence and then uses spacy.explain to identify the meaning of the entities.
+The program uses spacy to measure the similarity between formats.
+* getting the similarity between words
+* series of words and comparing them all with one another
+* similarity between longer sentences
 
 ## Table of Content
 1.  Implementing the website in a virtual environment.
@@ -30,7 +33,7 @@ The virtual environment requires the installation of python, pip, django and spa
 
 Go to the directory or folder where you want to install the project and enter the following command in the command line:
 ```
->git clone https://github.com/riaandeventer/garden_path
+>git clone https://github.com/riaandeventer/semantic_sim
 ```
 If you are asked for a login then it should be because you might have made a typing error with the link.
 
@@ -39,11 +42,11 @@ If you are asked for a login then it should be because you might have made a typ
 If your files copied successfully, there should be a folder garden_path when you enter the >dir command.
 Go to this directory with below command.
 ```
->cd garden_path
+>cd semantic_sim
 ```
 Now we can run the program with below command:
 ```
->python garden.py
+>python semantic.py
 ```
 
 ### 2.  Implementing the program in a Docker environment.
@@ -79,22 +82,22 @@ Regardless if you are now in the desktop command prompt or the docker playground
 
 Copy the required files.
 ```
->git clone https://github.com/riaandeventer/garden_path
+>git clone https://github.com/riaandeventer/semantic_sim
 ```
 If you are asked for a login then it should be because you might have made a typing error with the link.
 
 First we have to go into the folder that was created from the clone.
 ```
->cd garden_path
+>cd semantic_sim
 ```
 Now we have to build the project with following commands:
 ```
->docker build -t garden_path ./
+>docker build -t semantic_sim ./
 ```
 Now we need to connect the build name with the docker hub repository that we want to create.
 We will do this with the below command.
 ```
->docker tag garden_path [docker hub username without square brackets]/garden_path
+>docker tag semantic_sim [docker hub username without square brackets]/semantic_sim
 ```
 Now we need to copy our build to our docker hub. We need to use the push command from the command prompt
 or the playground prompt (Which ever one you are using).
@@ -105,9 +108,9 @@ To be able to push to docker hub, we need access to docker hub from the command 
 You will be asked for your docker hub username and password. Enter these and lookout for the login succeeded message.
 If the login was successful, let's push our build to docker hub with the following command:
 ```
->docker push [docker hub username without square brackets]/garden_path
+>docker push [docker hub username without square brackets]/semantic_sim
 ```
-We have now created our project on docker hub. Go to Docker Hub and confirm that there is now a garden_path repository
+We have now created our project on docker hub. Go to Docker Hub and confirm that there is now a semantic_sim repository
 indicating that a push took place.
 
 If you have been working with Docker Desktop, we are no done with Docker Desktop and will complete the rest with Docker Playground.
@@ -121,7 +124,7 @@ click “add new instance”.
 **If you have used Docker Playground for Copying Files and Publishing the site to Docker Hub** then you can just continue with the following commands:
 
 ```
->docker run [docker hub username without square brackets]/garden_path
+>docker run [docker hub username without square brackets]/semantic_sim
 ```
 Docker on the VM will download your image from Docker Hub and do all the relevant preparations and installation to make your app work.
 
