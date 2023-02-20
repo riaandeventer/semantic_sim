@@ -1,9 +1,8 @@
-# Software Engineer: RIAAN VAN DEVENTER (SN: RV22110005417)
-# This was programmed for the Software Engineering BOOTCAMP
+# Software Engineer: RIAAN DEVENTER
 # Written on 15 February 2023
 
-# ************** L3T12 - TASK1 ASSIGNMENT ************** 
-# Run all the code extracts provided in SE L3T12 - Semantic Similarity (NLP).pdf.
+#------------------------------------------------------------------------------------------------
+# Run code extracts to showcase different models of Semantic Similarity (NLP)
 # ● Write a note about what you found interesting about the similarities
 #   between cat, monkey and banana and think of an example of your own.
 #
@@ -13,7 +12,7 @@
 # NOTE: The 'en_core_web_md' model is more advanced than the 'en_core_web_sm' model.
 #       'en_core_web_md' have more data to compare to and the similarity percentage 
 #       is much lower.
-#******************************************************
+#------------------------------------------------------------------------------------------------
 
 # ======= Working with spaCy ===== #
 
@@ -21,7 +20,7 @@ import spacy
 
 nlp = spacy.load('en_core_web_md')
 
-# Extract on Page 3 - SIMILARITY WITH SPACY
+# Model - SIMILARITY WITH SPACY
 # We are using the keyword ’similarity’ for getting the similarity between the words.
 word1 = nlp("cat")
 word2 = nlp("monkey")
@@ -71,7 +70,7 @@ fish, cat has more or less the same similarity as fish & dog which is strange. E
     are pretty much the same, fish is a favorite food of cats that does not seem to be considered.
 '''
 
-# Extract on Page 4 - WORKING WITH VECTORS
+# Model - WORKING WITH VECTORS
 # In the case where you have a series of words and want to compare them all with
 # one another, you can use the format outlined in this section.
 print()
@@ -102,7 +101,7 @@ banana monkey -  0.4041501581668854
 banana banana -  1.0
 '''
 
-# Extract on Page 6 - WORKING WITH SENTENCES
+# Model - WORKING WITH SENTENCES
 # We can work on similarity between longer sentences with below section.
 print()
 print(f"--------------- Longer Sentence Similarities ---------------")
