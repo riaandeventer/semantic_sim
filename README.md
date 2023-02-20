@@ -1,6 +1,6 @@
 # Semantic Similarity (NLP)
 
-This program measure similarities between different formats.
+This program measure similarities between different formats of string inputs.
 
 ## Description
 
