@@ -132,4 +132,4 @@ The program should run in the terminal.
 
 ### 3.  Authors
 
-Riaan Deventer  - [@riaandeventer](https://twitter.com/riaandeventer)
+Riaan Deventer  - [LinkedIn: @riaandeventer](https://www.linkedin.com/in/riaandeventer/)
