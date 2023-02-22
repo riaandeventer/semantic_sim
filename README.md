@@ -10,7 +10,7 @@ The program uses spacy to measure the similarity between formats.
 * similarity between longer sentences
 
 ## Table of Content
-1.  Implementing the website in a virtual environment.
+1.  Implementing the program in a virtual environment.
     - 1.1   Dependencies
     - 1.2   Copying Files
     - 1.3   Run Program
